@@ -1,0 +1,5 @@
+set title "Odleglosc od punktu"
+set xlabel "czas"
+set ylabel "węzeł/Odległość"
+plot "F:/logi.txt" using 1:2 title 'Węzeł*10' with points, \
+"F:/logi.txt" using 1:3 title 'Odległość' with linespoints

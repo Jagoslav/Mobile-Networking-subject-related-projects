@@ -1,0 +1,16 @@
+set multiplot layout 3, 1 title "projekt 3"
+#set margin 2
+set yrange [-1:1]
+set title "momenty nadejœcia zg³oszeñ"
+unset key
+plot "F:/SymulatorStacjiBazowej/dist/zg³oszeniaPrzychodz¹ce.txt" using 1:2 with points
+
+set yrange [0:10]
+set title "obs³uga zg³oszeñ / nr kana³u"
+unset key
+plot "F:/SymulatorStacjiBazowej/dist/obs³ugaZg³oszeñ.txt" using 1:2 with linespoints
+set yrange [0:10]
+set title "stan zape³nienia kolejki"
+unset key
+plot "F:/SymulatorStacjiBazowej/dist/kolejka.txt" using 1:2 with lines
+unset multiplot
